@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/kontakt.css">
+
+</head>
+<body>
+
+
+<nav id="mojnav2" class="navbar navbar-expand-lg navbar-dark  bg-primary  fixed-top">
+
+    <a class="navbar-brand" href="https://www.almeny.com/test/"><img id="log" src="assets/img/logo2.svg" alt="logo"></a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <ul class=" navbar-nav ml-auto">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">USLUGE<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="mojdropdowntext" href="https://www.almeny.com/test/WebSite.html">Webstranica</a></li>
+                    <li><a class="mojdropdowntext" href="#">Web Shop</a></li>
+                    <li><a class="mojdropdowntext" href="#">Optimizacije</a></li>
+                    <li><a class="mojdropdowntext" href="#">Ostale Usluge</a></li>
+                </ul>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="#">PROJEKTI</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="https://www.almeny.com/test/Kontakt.html">KONTAKT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+<div class="container" style="margin-top:90px;">
+    <div class="form-wrapper">
+        <h2>Pitajte nas</h2>
+        <div class="row cf">
+            <p style="font-size:20px;">Vaše Ime:</p>
+            <input class="text-input" type="text" name="text1" id="text1">
+        </div>
+        <div class="row cf">
+            <p style="font-size:20px;">Vaš Email:</p>
+            <input class="text-input" type="text" name="text1" id="text1">
+        </div>
+        <div class="row cf" style="display:inline;">
+            <p style="font-size:20px; margin-bottom:30px;" class="text-center">Pitanje vezano za:</p>
+            <div class="three col">
+                <input type="checkbox" name="c1" id="c1" checked><label class="checkbox-label" for="c1"><span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Webstranica</span></label>
+            </div>
+            <div class="three col">
+                <input type="checkbox" name="c2" id="c2"><label class="checkbox-label" for="c2"><span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Web Shop</span></label>
+            </div>
+            <div class="three col">
+                <input type="checkbox" name="c3" id="c3"><label class="checkbox-label" for="c3"><span class="icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Optimizacija</span></label>
+            </div>
+            <div class="three col">
+                <input type="checkbox" name="c4" id="c4"><label class="checkbox-label" for="c4"><span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Ostalo</span></label>
+            </div>
+        </div>
+        <div class="row cf">
+            <p style="font-size:18px;">Vaš Budget: HRK  <span class="budget-text" style="color:#0071BC">0</span></p>
+            <input type="range" id="budget" min="0" value="0" max="5000" step="100">
+        </div>
+        <div class="row cf" style="margin-top:30px;">
+            <div class="message" style="font-size:15px;">Poruka</div>
+            <textarea placeholder="Pokušajte čim detaljnije opisate vašu ideju..." name="t1" id="t1"></textarea>
+        </div>
+        <row class="cf">
+            <input style="font-size:25px; display:block;margin-left:auto;margin-right:auto;margin-top:40px;" class="submit" type="submit" value="Pošalji">
+        </row>
+    </div>
+</div>
+
+
+
+<footer class="footer2">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 footer-navigation">
+            <h3><a href="#">Almeny <span>Studio</span></a></h3>
+            <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Usluge</a><strong> · </strong><a href="#">Projekti</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Cijene</a><strong> · </strong><a href="#">Kontakt</a></p>
+            <p class="company-name">Almeny Studio © 2017 </p>
+        </div>
+        <div class="col-md-4 col-sm-6 footer-contacts">
+            <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                <p><span class="new-line-span">Lorem ipsum</span> Pula, Hrvatska</p>
+            </div>
+            <div><i class="fa fa-phone footer-contacts-icon"></i>
+                <p class="footer-center-info email text-left"> +385 00 000 0000</p>
+            </div>
+            <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                <p> <a href="#" target="_blank">test@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 footer-about">
+            <h4>O Tvrtci</h4>
+            <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+            <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:30px;">
+        <div class="col-lg-12">
+            <img class="img-fluid linelogo" src="assets/img/linelogo2.png">
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+$(document).on('input change', '#budget', function() {
+$('.budget-text').html( $(this).val() );
+});
+</script>
+
+</body>
+</html>

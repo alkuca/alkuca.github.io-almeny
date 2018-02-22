@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Almeny - Kontakt</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/kontakt.css">
-
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="icon"
+          type="image/png"
+          href="assets/img/fav.png">
 </head>
+
+<style>
+    .dropdown-menu{
+        letter-spacing:0.5px;
+        background-color:#263238;
+    }
+    .dropdown-menu li a{
+        font-size:16px !important;
+    }
+
+
+</style>
 <body>
 
 
 <nav id="mojnav2" class="navbar navbar-expand-lg navbar-dark  bg-primary  fixed-top">
 
-    <a class="navbar-brand" href="https://www.almeny.com/test/"><img id="log" src="assets/img/logo2.svg" alt="logo"></a>
+    <a class="navbar-brand" href="https://alkuca.github.io/almeny"><img id="log" src="assets/img/logo2.svg" alt="logo"></a>
 
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,20 +41,20 @@
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">USLUGE<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="mojdropdowntext" href="https://www.almeny.com/test/WebSite.html">Webstranica</a></li>
-                    <li><a class="mojdropdowntext" href="#">Web Shop</a></li>
-                    <li><a class="mojdropdowntext" href="#">Optimizacije</a></li>
-                    <li><a class="mojdropdowntext" href="#">Ostale Usluge</a></li>
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/WebSite.html">Webstranica</a></li>
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/WebShop.html">Web Shop</a></li>
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/Optimizacija.html">Optimizacije</a></li>
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/SocialMedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li class="navbar-item">
-                <a class="nav-link" href="#">PROJEKTI</a>
+                <a class="nav-link" >PROJEKTI</a>
             </li>
             <li class="navbar-item">
-                <a class="nav-link" href="#">BLOG</a>
+                <a class="nav-link" >BLOG</a>
             </li>
             <li class="navbar-item">
-                <a class="nav-link" href="https://www.almeny.com/test/Kontakt.html">KONTAKT</a>
+                <a class="nav-link" href="https://alkuca.github.io/almeny/Kontakt.html">KONTAKT</a>
             </li>
         </ul>
     </div>
@@ -54,24 +69,26 @@
         <h2>Pitajte nas</h2>
         <div class="row cf">
             <p style="font-size:20px;">Vaše Ime:</p>
-            <input class="text-input" type="text" name="text1" id="text1">
+            <input class="text-input animated fadeInRight" type="text" name="text1" id="text1">
         </div>
         <div class="row cf">
             <p style="font-size:20px;">Vaš Email:</p>
             <input class="text-input" type="text" name="text1" id="text1">
         </div>
-        <div class="row cf" style="display:inline;">
+        <div class="row" >
+            <div class="col-12">
             <p style="font-size:20px; margin-bottom:30px;" class="text-center">Pitanje vezano za:</p>
-            <div class="three col">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3">
                 <input type="checkbox" name="c1" id="c1" checked><label class="checkbox-label" for="c1"><span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Webstranica</span></label>
             </div>
-            <div class="three col">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3 ">
                 <input type="checkbox" name="c2" id="c2"><label class="checkbox-label" for="c2"><span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Web Shop</span></label>
             </div>
-            <div class="three col">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3">
                 <input type="checkbox" name="c3" id="c3"><label class="checkbox-label" for="c3"><span class="icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Optimizacija</span></label>
             </div>
-            <div class="three col">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3">
                 <input type="checkbox" name="c4" id="c4"><label class="checkbox-label" for="c4"><span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span><span style="font-size:15px;" class="text">Ostalo</span></label>
             </div>
         </div>

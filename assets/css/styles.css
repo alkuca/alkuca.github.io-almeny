@@ -17,14 +17,19 @@ html,body{
 
     height:100%;
 }
+.h1{
+    font-family: 'Roboto', sans-serif !important;
+
+}
 
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body{
-    font:normal 75% Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     margin:0;
+    overflow-x:hidden;
 
 
 }
@@ -56,9 +61,9 @@ canvas{
 #mojnav{
     width:100%;
     position:fixed;
-    background-color:rgba(36,50,56,0.7) !important;
+background-color:#263238 !important;
     z-index:2000;
-    font-family:'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif !important;
     letter-spacing: 2px;
 }
 
@@ -247,10 +252,6 @@ canvas{
 
 }
 
-.h1{
-    font-family: 'Roboto', sans-serif !important;
-}
-
 
 
 @media only screen and (max-width: 768px) {
@@ -348,7 +349,7 @@ footer {
     box-sizing:border-box;
     width:100%;
     text-align:left;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     padding:55px 50px;
     margin-top:80px;
     bottom:0;
@@ -357,7 +358,8 @@ footer {
 
 .footer-navigation h3 {
     margin:0;
-    font:normal 36px Roboto, cursive;
+    font:normal 36px Roboto,  sans-serif !important;
+    font-family: 'Roboto', sans-serif !Important;
     margin-bottom:20px;
     color:#fff;
 }
@@ -485,7 +487,7 @@ div.social-links {
         opacity:0;
         }
     100% {
-        left:0px;
+        left:0;
         opacity:1;
         }
 }
@@ -497,7 +499,7 @@ div.social-links {
         opacity:0;
     }
     100% {
-        right:0px;
+        right:0;
         opacity:1;
     }
 }
@@ -522,8 +524,9 @@ div.social-links {
 
 .textcenter{
     text-align:center;
-    font:normal 27px Roboto, cursive;
+    font:normal 40px Roboto, sans-serif !important;
     padding-top:40px;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .PLACEHOLDER{
@@ -537,9 +540,20 @@ div.social-links {
     margin-right:8px;
 }
 
+@media only screen and (max-width: 480px){
+    #log{
+        width:200px ;
+    }
+
+}
+
+
 @media screen and (max-width: 600px) {
 
     .makni { display: none; }
+    #smanji{
+        font-size:25px !important;
+    }
 
 }
 
@@ -604,7 +618,67 @@ div.social-links {
 }
 
 
+.opacity{
+    opacity: 0;
+}
 
+
+@media only screen and (max-width : 768px) {
+    #start2{
+        margin-top:100px !important;
+    }
+}
+
+
+
+
+
+
+
+
+#scena{
+    position:relative;
+    height:6000px;
+}
+
+#slikadiv{
+
+    position:relative;
+    left:0;
+    top:0;
+}
+#slika1{
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index:4;
+    max-width:100%;
+    width:23%;
+}
+#slika2{
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index:3;
+    max-width:100%;
+}
+
+
+#izaslika{
+    position:absolute;
+    left:10%;
+}
+
+#content{
+    position:relative;
+}
+
+
+.desno{
+    right:100px;
+}
 
 
 

@@ -4,26 +4,50 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
+    <title>Almeny Studio</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js">
+    <link rel="icon"
+          type="image/png"
+          href="assets/img/fav.png">
 </head>
 
 <style>
     .dropdown-menu{
         letter-spacing:0.5px;
+        background-color:#263238;
     }
+
+
+    .particleanimacija{
+        animation-name:vidljivost;
+        animation-duration: 15s;
+    }
+
+    @keyframes vidljivost{
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+
+
 
 
 </style>
 
 <body>
 
-<div id="particles-js"></div>
+
+
+
+<div id="particles-js" class="particleanimacija"></div>
 
 <div class="container-fluid blackbackground"></div>
 
@@ -39,101 +63,97 @@
         <ul class="navbar-nav ml-auto">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">USLUGE<span class="caret"></span></a>
-                <ul class="dropdown-menu mojdropdown">
-                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/WebSite">Webstranica</a></li>
-                    <li><a class="mojdropdowntext" href="#">Web Shop</a></li>
-                    <li><a class="mojdropdowntext" href="#">Optimizacije</a></li>
-                    <li><a class="mojdropdowntext" href="#">Ostale Usluge</a></li>
+                <ul class="dropdown-menu">
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/WebSite.html">Webstranice</a></li>
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/WebShophtml">Web Shop</a></li>
+                    <li><a class="mojdropdowntext" href=https://alkuca.github.io/almeny/Optimizacija.html">Optimizacije</a></li>
+                    <li><a class="mojdropdowntext" href="https://alkuca.github.io/almeny/SocialMedia.html">Social Media</a></li>
                 </ul>
             </li>
             <li class="navbar-item">
-                <a class="nav-link" href="#">PROJEKTI</a>
+                <a class="nav-link">PROJEKTI</a>
             </li>
             <li class="navbar-item">
-                <a class="nav-link" href="#">BLOG</a>
+                <a class="nav-link" >BLOG</a>
             </li>
             <li class="navbar-item">
-                <a class="nav-link" href="#">KONTAKT</a>
+                <a class="nav-link" href="https://alkuca.github.io/almeny/Kontakt.html">KONTAKT</a>
             </li>
         </ul>
     </div>
-    <div class="blur"></div>
 </nav>
 
 
 <div class="jumbotron" id="divv">
-    <p id="textfont" class=" text-center">Lorem ispum  los dolos et dolos <br/>awfa fewofaka wdfoa</p>
+    <p id="textfont" class="text-center animated bounceInDown">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing</p>
 
     <p class="text-center" style="margin-top:130px;">
     <i class="animated infinite fadeInDown fa fa-angle-double-down" style="font-size:58px;color:white;"></i>
     </p>
 </div>
 
+<div id="scroll"></div>
 
-
-<div class="container" style="margin-top:150px;">
+<div id="start1" class="container" style="margin-top:150px;">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation element-to-hide"  ><img class="img-responsive" src="assets/img/Website.png" width="100%" ></div>  <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation2 element-to-hide textpadding textpaddingleft" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
-            <div class="row smallscreenmargin">
-                <h1 class="pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Web Stranice</h1></div>
+        <div id="kon" class="col-lg-6 col-md-6 col-sm-6 col-xs-12   opacity"  ><img class="img-responsive" src="assets/img/Website.png" width="100%" ></div>  <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div   class="col-lg-6 col-md-6 col-sm-6 col-xs-12  textpadding textpaddingleft" style="padding-left:100px; margin-top:20px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+            <div  class=" row smallscreenmargin">
+                <h1 id="kon2" class="opacity pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Web Stranice</h1></div>
             <div class="row" style="padding-top:35px;">
-                <p class="pullleft smallscrenpfont " style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
+                <p id="kon3" class=" opacity pullleft smallscrenpfont " style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
             </div>
-            <div class="row" style="padding-top:35px;"><img class="makni img-responsive pullcenter" src="assets/img/Tekst linije.png"></div>
+
         </div>
     </div>
 </div>
 
 
-<div class="container" style="margin-top:150px;">
+<div id="start2" class="container" style="margin-top:450px;">
     <div class="row">
-        <div class="first col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation3 element-to-hide textpadding" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div class="first col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation3  textpadding" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
             <div class="row smallscreenmargin">
-                <h1 class="pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Web Shopovi</h1></div>
+                <h1 id="kon4" class="opacity pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Web Shopovi</h1></div>
             <div class="row" style="padding-top:35px;">
-                <p class="pullright smallscrenpfont" style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
+                <p id="kon5" class="opacity pullright smallscrenpfont" style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
             </div>
-            <div class="row" style="padding-top:35px;"><img class="makni img-responsive pullcenter" src="assets/img/Tekst linije.png"></div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation4 element-to-hide" ><img class="img-responsive" src="assets/img/WebShop.png" width="100%"></div>  <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div id="kon6" class="opacity col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation4 " ><img class="img-responsive" src="assets/img/WebShop.png" width="100%"></div>  <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
     </div>
 </div>
 
 
-<div class="container" style="margin-top:150px;">
+<div id="start3" class="container" style="margin-top:450px;">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation5 element-to-hide"><img class="img-responsive" src="assets/img/SocialMarketing.png" width="100%"></div> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation6 element-to-hide textpadding" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div id="kon7" class="opacity col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation5 "><img class="img-responsive" src="assets/img/SocialMarketing.png" width="100%"></div> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation6  textpadding" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
             <div class="row smallscreenmargin">
-                <h1 class="pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Social Media</h1></div>
+                <h1 id="kon8" class="opacity pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Social Media</h1></div>
             <div class="row" style="padding-top:35px;">
-                <p class="pullleft smallscrenpfont" style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
+                <p id="kon9" class="opacity pullleft smallscrenpfont" style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
             </div>
-            <div class="row" style="padding-top:35px;"><img class="makni img-responsive pullcenter" src="assets/img/Tekst linije.png"></div>
         </div>
     </div>
 </div>
 
-<div class="container" style="margin-top:150px;">
+<div id="start4" class="container" style="margin-top:450px;">
     <div class="row">
-        <div class="first col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation7 element-to-hide textpadding" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div class="first col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation7 textpadding" style="padding-left:100px;"> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
             <div class="row smallscreenmargin">
-                <h1 class="pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Optimizacija Stranica</h1></div>
+                <h1 id="kon10" class="opacity pullleft smallscrenh1font" style="font-size:40px; font-weight:bold; color:#0071BC">Optimizacija</h1></div>
             <div class="row" style="padding-top:35px;">
-                <p class="pullright smallscrenpfont" style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
+                <p id="kon11" class="opacity pullright smallscrenpfont" style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus a turpis vestibulum ullamcorper. ut lacinia enim eget vulputate vehicula. Etiam quis semper est.</p>
             </div>
-            <div class="row" style="padding-top:35px;"><img class="makni img-responsive pullcenter" src="assets/img/Tekst linije.png"></div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation8 element-to-hide"><img class="img-responsive" src="assets/img/Seo.png" width="100%"></div> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
+        <div id="kon12" class="opacity col-lg-6 col-md-6 col-sm-6 col-xs-12 scrollanimation8"><img class="img-responsive" src="assets/img/Seo.png" width="100%"></div> <!-- scrollanimation i element-to-hide klase su za reveal on scroll -->
     </div>
 </div>
 
-<div class="container" style="margin-top:150px;">
-    <button class="btn btn-primary btn-lg " type="button" id="kontaktbutton">Kontaktirajte nas</button>
+<div id="start5" class="container" style="margin-top:350px; margin-bottom:300px;">
+    <button class="btn btn-primary btn-lg " type="button" onclick="relocate_kontakt()" id="kontaktbutton">Kontaktirajte nas</button>
 </div>
 
-<footer>
+<footer class="footer2 opacity" id="foot">
     <div class="row">
         <div class="col-md-4 col-sm-6 footer-navigation">
             <h3><a href="#">Almeny <span>Studio</span></a></h3>
@@ -172,115 +192,36 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
+<script src="assets/js/main.js"></script>
 
 <script src="particles.js"></script>
 <script src="assets/js/app.js"></script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
+<!-- GreenSock TweenMax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+<!-- ScrollMagic GreenSock Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
+
+
+ <!-- =============================   first scroll function not working properly   =======================
 <script>
-
-    $(window).scroll(function () {
-        $('.scrollanimation').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromleft");
-            }
-        });
+    window.wasScrolled = false;
+    $(window).bind('scroll',function(){
+        if (!window.wasScrolled) {
+            TweenMax.to(window, 2, {scrollTo: {y: '#scroll', autoKill: false},ease:Power2.easeOut});
+            window.wasScrolled = true;
+        }
     });
-
-    $(window).scroll(function () {
-        $('.scrollanimation2').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromright");
-            }
-        });
-    });
-
-
-    $(window).scroll(function () {
-        $('.scrollanimation3').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromleft");
-            }
-        });
-    });
-
-    $(window).scroll(function () {
-        $('.scrollanimation4').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromright");
-            }
-        });
-    });
-
-    $(window).scroll(function () {
-        $('.scrollanimation5').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromleft");
-            }
-        });
-    });
-
-    $(window).scroll(function () {
-        $('.scrollanimation6').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromright");
-            }
-        });
-    });
-
-    $(window).scroll(function () {
-        $('.scrollanimation7').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromleft");
-            }
-        });
-    });
-
-    $(window).scroll(function () {
-        $('.scrollanimation8').each(function () {
-            var imagePos = $(this).offset().top;
-            var imageHeight = $(this).height()+300;
-            var topOfWindow = $(window).scrollTop();
-
-            if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                $(this).addClass("imgmovefromright");
-            }
-        });
-    });
-
-
-
 </script>
+-->
+
 
 </body>
 
 </html>
+
